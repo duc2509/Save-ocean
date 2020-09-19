@@ -283,7 +283,7 @@ h3 {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100%;
+  height: calc(100% + 3rem);
   background-color: rgba(115, 173, 33, 0.9);
 }
 .volunteer-session .volunteer-content {
@@ -296,8 +296,8 @@ h3 {
   transform: translateX(-50%);
 }
 .volunteer-session .volunteer-content p {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 2rem;
+
 }
 .volunteer-session .volunteer-content span {
   display: block;
@@ -500,6 +500,9 @@ a{
     max-width: 300px;
     margin-top: 30px;
   }
+  .comment-session{
+    margin-top: 2rem;
+  }
   .comment-session .comment-wrapper{
       min-width: 300px;
       height: 200px;
@@ -509,6 +512,9 @@ a{
   }
   .comment-session .comment-wrapper img{
       margin: 40px auto;
+  }
+  .contact-wrapper p{
+    font-size: 1.4rem;
   }
 }
 @media (min-aspect-ratio: 16/9) {
