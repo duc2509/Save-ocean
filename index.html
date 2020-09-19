@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
+    
+</head>
+<body>
+    <!--narbar-->
+    <nav>
+        <div class="logo"><img src="./185b16e9-2574-49ff-a916-b2c3f72dad12_200x200.png" alt="logo" style="height: 30px;width: 30px;"><h1>Blue Shark</h1></div>
+        <div class="info-list">
+            <ul>
+                <a href="./index.html#mission-session"><li>About us</li></a>
+                <a href="./index.html#volunteer-session"><li>Join our team</li></a>
+                <a href="./donate.html"><li style="border-radius: 20px;background: #73AD21;padding: 5px 6px;">Donate us</li></a>
+            </ul>
+        </div>
+    </nav>
+    <!--Banner-->
+    <div class="video-container">
+        <video autoplay muted loop id="coral-video">
+            <source src="./video.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="banner-content">
+        <h1 class="text">Save The Ocean With Us</h1>
+    </div>
+    
+    <!--Banner-end-->
+    <!--Social media bar-->
+    <div id="socialarea">
+        <ul id="sociallist">
+          <li class="facebook_social"> <a href="https://www.facebook.com/thecenteno" target="_new"><i class="fa fa-facebook"></i></a> </li>
+          <li class="twitter_social"> <a href="https://twitter.com/thecenteno" target="_new"><i class="fa fa-twitter"></i></a> </li>
+          <li class="googleplus_social"> <a href="https://plus.google.com/u/0/+AngelCenteno88" target="_new"><i class="fa fa-google-plus"></i></a> </li>
+          <li class="pinterest_social"> <a href="#" target="_new"><i class="fa fa-pinterest-p"></i></a> </li>
+          <li class="linkedin_social"> <a href="https://www.linkedin.com/in/thecenteno" target="_new"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+      </div>
+    <!--Social media bar end -->
+
+    <!--Fact-->
+    <div class="fact-session">
+        <div class="fact-list">
+            <div class="fact" id="fact1"><p> <span class="quote-mark">❝</span> <span style="color:#73AD21 ;">Plastics</span> are the most common element found in the ocean today. Plastic, in particular, is <span style="color:#73AD21 ;">harmful to the environment</span> as it does not break down easily and is often mistaken as food by marine animals.</p></div>
+            <div class="fact" id="fact2"><p> <span class="quote-mark">❝</span> Plastics cause <span style="color:#73AD21 ;">more than 80%</span> of the negative effects on animals associated with ocean trash.</p></div>
+            <div class="fact" id="fact3"><p> <span class="quote-mark">❝</span> There are <span style="color:#73AD21 ;">25 trillion pieces</span> of plastic debris in the ocean. Of that, 269,000 tons float on the surface, while some four billion plastic microfibers per square kilometer litter the deep sea.</p></div>
+            
+        </div>
+    </div>
+    <!--Fact-end-->
+    <!--Mission-->
+    <div class="mission-session" id="mission-session">
+        <h1>Our Mission</h1>
+        <div class="mission" id="mission1">
+            <img id="plant" src="./icons8-coral-80.png" alt="plant">
+            <div class="mission-desciption" id="mission-desciption-1">
+                <h3>We plant coral</h3>
+                <p>We have planted <span style="color:#73AD21 ;">more than 10000 corals</span> at all our locations around the wolrd and build habitat for <span style="color:#73AD21 ;">over 500 species</span>. 1 coral for every $5 donation.</p>
+            </div>
+        </div>
+        <div class="mission" id="mission2">
+            <img id="clean" src="./icons8-broom-64.png" alt="clean">
+            <div class="mission-desciption" id="mission-desciption-2">
+                <h3>We collect trash</h3>
+                <p><span style="color:#73AD21 ;">Thousands kilograms</span> of trash are collected each year by our volunteers and <span style="color:#73AD21 ;">60%</span> of them are recycled to become beautyful hand-made decoration.  </p>
+            </div>
+            
+        </div>
+        <div class="mission" id="mission3">
+            <img id="edu" src=".//icons8-open-book-50.png" alt="education">
+            <div class="mission-desciption" id="mission-desciption-3">
+                <h3>We educate people</h3>
+                <p>We have almost <span style="color:#73AD21 ;">100 classes</span> and <span style="color:#73AD21 ;">300 teachers</span> who will spread ocean knowledge to all local people and traveller. All are free !</p>
+            </div>
+        </div>
+    </div>
+    <!--Mission-end-->
+    <!--Volunteer Session-->
+    <div class="volunteer-session" id="volunteer-session">
+        <div class="volunteer-content">
+            <h1>Volunteer with our Crew</h1>
+            <p>All One Ocean is run by volunteers who are passionate about the health of our Ocean and we can always use your help!
+                ​Whether it is for 1 hour or 20 we will find a place for you. We provide training and help wherever you need it!</p>
+            <h2>Current Volunteer Opportunities:</h2>
+            <span> Clean Up Station Stewards</span>
+            <span>Ocean Warrior Facilitators</span>   
+            <span>Tabling and Event Volunteers</span>    
+            <span>Beach Clean Up Organizers</span>   
+            <span>Beach Clean Up Participants</span>
+            <span id="sign-up">Sign up as a Volunteer</span>
+        </div>
+    </div>
+    <!--Volunteer Session-end-->
+    <!--Comment session-->
+    <div class="comment-session">
+        <div class="comment-wrapper">
+            <img src="./per1.png" alt="">
+            <div class="comment-content">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tenetur voluptatem? Aperiam magnam maiores, ipsum quasi, rerum eligendi molestias optio blanditiis enim minima minus nemo, illum sint repellendus corrupti corporis!"</p>
+                <cite>-John Doe</cite>
+            </div>
+            </div>
+        <div class="comment-wrapper">
+            <img src="./per2.png" alt="">
+            <div class="comment-content">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tenetur voluptatem? Aperiam magnam maiores, ipsum quasi, rerum eligendi molestias optio blanditiis enim minima minus nemo, illum sint repellendus corrupti corporis!"</p>
+                <cite>-Jane Doe</cite>  
+            </div>
+        </div>
+        <div class="comment-wrapper">
+            <img src="./per3.png" alt="">
+            <div class="comment-content">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa tenetur, repudiandae atque enim eaque aliquid! Ratione, soluta! Esse, animi."</p>
+                <cite>-Duc Nguyen</cite>
+            </div>
+        </div>
+    </div>
+    <!--Comment session end-->
+    <!--Contact-session-->
+    <div class="contact-session">
+        <div class="contact-wrapper">
+            <p>Give us a call (363) 748-9373</p>
+        </div>
+    </div>
+    <!--Contact-session-end-->
+    <!--Footer-->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="follow">
+                <h2>Follow</h2>
+                <a href="https://www.facebook.com/thecenteno" target="_new"><span>Facebook</span></a>
+                <span>Policy</span>
+            </div>
+            <div class="visit-us">
+                <h2>Visit us</h2>
+                <span>123 Victoria St La Crosse</span>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <span>(363) 748-9373</span>
+                <span>gmail@example.com</span>
+            </div>
+        </div>
+        <p style="position: absolute;left: 30px;bottom: 30px;">&copy;2020 Duc Nguyen (Brian)<p></p>
+    </footer>
+    <!--Footer-end-->
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/fe2c2e5fc9.js" crossorigin="anonymous"></script>
+</body>
+</html>

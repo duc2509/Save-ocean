@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="donate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+ <!--narbar-->
+ <nav>
+    <div class="logo"><img src="./185b16e9-2574-49ff-a916-b2c3f72dad12_200x200.png" alt="logo" style="height: 30px;width: 30px;"><h1>Blue Shark</h1></div>
+    <div class="info-list">
+        <ul>
+            <a href="./index.html#mission-session"><li>About us</li></a>
+            <a href="./index.html#volunteer-session"><li>Join our team</li></a>
+            <a href="./donate.html"><li style="border-radius: 20px;background: #73AD21;padding: 5px 6px;">Donate us</li></a>
+        </ul>
+    </div>
+</nav>
+<!--Social media bar-->
+<div id="socialarea">
+    <ul id="sociallist">
+      <li class="facebook_social"> <a href="https://www.facebook.com/thecenteno" target="_new"><i class="fa fa-facebook"></i></a> </li>
+      <li class="twitter_social"> <a href="https://twitter.com/thecenteno" target="_new"><i class="fa fa-twitter"></i></a> </li>
+      <li class="googleplus_social"> <a href="https://plus.google.com/u/0/+AngelCenteno88" target="_new"><i class="fa fa-google-plus"></i></a> </li>
+      <li class="pinterest_social"> <a href="#" target="_new"><i class="fa fa-pinterest-p"></i></a> </li>
+      <li class="linkedin_social"> <a href="https://www.linkedin.com/in/thecenteno" target="_new"><i class="fa fa-linkedin"></i></a> </li>
+    </ul>
+  </div>
+<!--Social media bar end -->
+<!--Form-start-here-->
+<div class="form-wrapper">
+<form id="form" >
+    <h1>Donate form</h1>
+    <div class="form-control ">
+      <input  type="text" id="firstname" placeholder="Enter your first name" >
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control ">
+      <input type="text" id="lastname" placeholder="Enter your last name" >
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <input type="email" id="email" placeholder="Email">
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <input type="tel" id="tel" placeholder="Tel No">
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <input type="number" id="amount" placeholder="Amount">
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="fas fa-check-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <select id="positions" name="positions">
+        <option value="">Choose positions</option>
+        <option value="clean">Clean Up Station Stewards</option>
+        <option value="warrior">Ocean Warrior Facilitators</option>
+        <option value="tabling">Tabling and Event Volunteers</option>
+        <option value="beach-clean-up-o">Beach Clean Up Organizers</option>
+        <option value="beach-clean-up-p">Beach Clean Up Participants</option>
+      </select>
+    </div>
+    <input type="button" id="joinbtn" value="Join us" onclick="show()">
+    <input type="submit" id="submitbtn" value="Submit">
+    
+   
+</form>
+<div class="decoration"></div>
+</div>
+
+  
+  <script src="donate.js"></script>
+  <script src="https://kit.fontawesome.com/fe2c2e5fc9.js" crossorigin="anonymous"></script>
+</body>
+</html>

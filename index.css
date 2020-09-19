@@ -1,0 +1,535 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+nav {
+  height: 40px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  z-index: 150;
+  background-color: rgb(45, 47, 59);
+}
+.logo {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  font-size: 0.6rem;
+}
+nav .info-list {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+  font-size: 0.7rem;
+}
+nav .info-list li {
+  list-style: none;
+  display: inline;
+}
+#socialarea {
+  position: fixed;
+  right: -5px;
+  top: 60%;
+  width: 45px;
+  height: auto;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#socialarea ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#socialarea li {
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#socialarea li a {
+  line-height: 40px;
+  color: white;
+}
+
+#socialarea .facebook_social {
+  background-color: #3a579a;
+  transition: 400ms;
+}
+
+#socialarea .facebook_social:hover {
+  background-color: #2b4071;
+}
+
+#socialarea .twitter_social {
+  background-color: #00abf0;
+  transition: 400ms;
+}
+
+#socialarea .twitter_social:hover {
+  background-color: #0184b9;
+}
+
+#socialarea .googleplus_social {
+  background-color: #df4a32;
+  transition: 400ms;
+}
+
+#socialarea .googleplus_social:hover {
+  background-color: #bc3e2a;
+}
+
+#socialarea .pinterest_social {
+  background-color: #cd1c1f;
+  transition: 400ms;
+}
+
+#socialarea .pinterest_social:hover {
+  background-color: #b0171a;
+}
+
+#socialarea .linkedin_social {
+  background-color: #127bb6;
+  transition: 400ms;
+}
+
+#socialarea .linkedin_social:hover {
+  background-color: #0c5680;
+}
+
+.video-container {
+  position: relative;
+}
+video {
+  position: fixed;
+  z-index: 20;
+}
+.video-container::after {
+  content: "";
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
+  z-index: 20;
+}
+.banner-content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.banner-content::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  height: 70px;
+  width: 70px;
+  background-image: url("./scrolldown.png");
+  background-repeat: no-repeat;
+  z-index: 150;
+  animation: MoveUpDown 1.5s linear infinite;
+}
+
+.text {
+  font-weight: 900;
+  font-size: 4em;
+  color: white;
+  font-weight: lighter;
+  font-family: "Sedgwick Ave", cursive;
+  text-align: center;
+  padding: auto 5px;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fact-session {
+  position: relative;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.fact-session .fact-list {
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fact-session .fact-list .fact {
+  position: relative;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-indent: 15px;
+  color: rgb(173, 167, 167);
+  display: inline-block;
+  width: 200px;
+  min-height: 300px;
+  background-color: rgb(45, 47, 59);
+  padding: 70px 30px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.fact-session .fact-list .fact .quote-mark {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 150px;
+  text-align: left;
+  z-index: 10;
+  font-size: 5rem;
+  color: rgb(173, 167, 167);
+  line-height: 200px;
+}
+.mission-session {
+  position: relative;
+  width: 100vw;
+  left: 0;
+  z-index: 100;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  background-color: rgb(233, 233, 233);
+  padding-top: 50px;
+}
+.mission-session .mission {
+  max-width: 720px;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mission-session .mission img {
+  max-width: 100px;
+  height: 100px;
+  position: relative;
+}
+.mission-session .mission .mission-desciption {
+  height: 200px;
+  max-width: 420px;
+  padding: 20px 50px;
+  text-indent: 30px;
+  text-align: justify;
+  position: relative;
+}
+.volunteer-session {
+  position: relative;
+  left: 0;
+  z-index: 100;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-image: url(./United-Way-Volunteer-Image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100vw;
+  align-items: center;
+}
+.volunteer-session::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(115, 173, 33, 0.9);
+}
+.volunteer-session .volunteer-content {
+  position: relative;
+  z-index: 150;
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.volunteer-session .volunteer-content p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.volunteer-session .volunteer-content span {
+  display: block;
+  margin-top: 20px;
+}
+#sign-up {
+  border-radius: 15px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 30px;
+}
+#sign-up:hover {
+  background-color: white;
+  color: #73ad21;
+}
+
+.comment-session {
+  position: relative;
+  width: 100vw;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.comment-session .comment-wrapper{
+  width: 25%;
+  text-align: center;
+  height: 500px;
+}
+.comment-session img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 50px 0;
+}
+.comment-session p {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: rgb(173, 167, 167);
+}
+.comment-session cite{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.contact-session{
+    position: relative;
+    left: 0;
+    width: 100vw;
+    height: 400px;
+    z-index: 100;
+    background-color: white;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background: url(./CR-Health-Inlinehero-is-it-safe-to-go-to-the-beach-0520.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.contact-session::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 47, 59,0.9);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contact-wrapper{
+    position: relative;
+    z-index: 150;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 100px;
+}
+footer{
+    position: relative;
+    left: 0;
+    width: 100vw;
+    height: 400px;
+    z-index: 100;
+    background-color: white;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: rgb(45, 47, 59);
+}
+footer .footer-wrapper{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer h2{
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+footer span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .info-list {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav .info-list {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .info-list {
+    width: 70%;
+  }
+  .text {
+    font-size: 3rem;
+  }
+  .fact-session .fact-list {
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact-session .fact-list .fact {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .mission-session .mission {
+    max-width: 600px;
+  }
+  
+  .mission-session .mission img {
+    max-width: 100px;
+    height: 100px;
+  }
+  .mission-session .mission .mission-desciption {
+    height: 200px;
+    max-width: 400px;
+    padding: 10px 20px;
+    text-indent: 10px;
+  }
+  .comment-session{
+      flex-direction: column;
+  }
+  .comment-session img{
+      width: 100px;
+      height: 100px;
+  }
+  .comment-session .comment-wrapper{
+      display: flex;
+      flex-direction: row;
+      height: 200px;
+      width: calc(100vw - 150px);
+  }
+  .comment-session .comment-wrapper p{
+      padding: 70px 30px 10px 30px;
+  }
+  footer{
+      font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 512px) {
+  nav .info-list {
+    width: 380px;
+    font-size: 0.6rem;
+  }
+  .mission-session .mission {
+    flex-direction: column;
+    max-width: 300px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .mission-session .mission .mission-desciption {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+  .comment-session .comment-wrapper{
+      min-width: 300px;
+      height: 200px;
+  } 
+  .comment-session .comment-wrapper p{
+    padding: 40px 20px 15px 20px;
+  }
+  .comment-session .comment-wrapper img{
+      margin: 40px auto;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
