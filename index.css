@@ -315,9 +315,14 @@ h3 {
   cursor: pointer;
   margin-top: 30px;
 }
+#sign-up a{
+  color: white;
+}
 #sign-up:hover {
   background-color: white;
-  color: #73ad21;
+}
+#sign-up:hover a{
+  color: rgb(115, 173, 33);
 }
 
 .comment-session {
